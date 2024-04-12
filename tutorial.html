@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap Tutorial</title>
+    <!-- IMPORTS START-->
+    <script src="main2.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script
+      src="https://enyeinnovation.github.io/js/highlight.js"
+      type="module"
+    ></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <!-- IMPORTS END-->
+  </head>
+  <body>
+    <div id="up">
+      <h1>Up</h1>
+    </div>
+    <div>
+      <nav id="navbarTop" class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bootstrap Tutorial</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#up"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="redirectBack()" class="nav-link" href="#up"
+                    >Back to Home screen</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="buttons">
+      <h1 id="title-buttons">Buttons</h1>
+      <div id="base-class-button" class="inner-line-buttons">
+        <div id="code-box-first">
+          <div id="text-box-first">
+            <h2 style="text-align: center">Base class</h2>
+            <p style="text-align: center">
+              Bootstrap has a base .btn class that sets up basic styles such as
+              padding and content alignment. <br />
+              By default, .btn controls have a transparent border and background
+              color, and lack any explicit focus and hover styles.
+            </p>
+          </div>
+          <div id="prev-box-first">
+            <div id="preview-box-first">
+              <button id="button-prev" type="button" class="btn">
+                Base class
+              </button>
+            </div>
+            <div id="code-prev-first">
+              <pre style="text-align: left" id="code-box-first-code"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Base Class&lt;/button&gt;
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="variants-class-button">
+        <div id="base-class-button-second" class="inner-line-buttons">
+          <div id="code-box-second">
+            <div id="text-box-second">
+              <h2 style="text-align: center">Variants</h2>
+              <p style="text-align: center">
+                Bootstrap includes several button variants, each serving its own
+                semantic purpose, with a few extras thrown in for more control.
+              </p>
+            </div>
+            <div id="prev-box-second">
+              <div id="preview-box-second">
+                <div id="variants-buttons">
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <button type="button" class="btn btn-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="btn btn-success">Success</button>
+                  <button type="button" class="btn btn-danger">Danger</button>
+                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button type="button" class="btn btn-info">Info</button>
+                  <button type="button" class="btn btn-light">Light</button>
+                  <button type="button" class="btn btn-dark">Dark</button>
+
+                  <button type="button" class="btn btn-link">Link</button>
+                </div>
+              </div>
+              <div id="code-prev-second">
+                <pre style="text-align: left" id="code-box-second-code"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+              </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="outline-buttons-button">
+        <div id="outline-buttons-button-third" class="inner-line-buttons">
+          <div id="code-box-third">
+            <div id="text-box-third">
+              <h2 style="text-align: center">Outline buttons</h2>
+              <p style="text-align: center">
+                In need of a button, but not the hefty background colors they
+                bring? <br />
+                Replace the default modifier classes with the .btn-outline-*
+                ones to remove all background images and colors on any button.
+              </p>
+            </div>
+            <div id="prev-box-third">
+              <div id="preview-box-third">
+                <div id="outline-buttons">
+                  <button type="button" class="btn btn-outline-primary">
+                    Primary
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary">
+                    Secondary
+                  </button>
+                  <button type="button" class="btn btn-outline-success">
+                    Success
+                  </button>
+                  <button type="button" class="btn btn-outline-danger">
+                    Danger
+                  </button>
+                  <button type="button" class="btn btn-outline-warning">
+                    Warning
+                  </button>
+                  <button type="button" class="btn btn-outline-info">
+                    Info
+                  </button>
+                  <button type="button" class="btn btn-outline-light">
+                    Light
+                  </button>
+                  <button type="button" class="btn btn-outline-dark">
+                    Dark
+                  </button>
+                </div>
+              </div>
+              <div id="code-prev-third">
+                <pre style="text-align: left" id="code-box-third-code"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;
+              </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="disabled-state">
+        <div id="disabled-state-third" class="inner-line-buttons">
+          <div id="code-box-fourth">
+            <div id="text-box-fourth">
+              <h2 style="text-align: center">Disabled state</h2>
+              <p style="text-align: center">
+                Make buttons look inactive by adding the disabled boolean
+                attribute to any button element. <br />
+                Disabled buttons have pointer-events: none applied to,
+                preventing hover and active states from triggering.
+              </p>
+            </div>
+            <div id="prev-box-fourth">
+              <div id="preview-box-fourth">
+                <div id="disabled-buttons">
+                  <button type="button" class="btn btn-primary" disabled>
+                    Primary button
+                  </button>
+                  <button type="button" class="btn btn-secondary" disabled>
+                    Button
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    disabled
+                  >
+                    Primary button
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    disabled
+                  >
+                    Button
+                  </button>
+                </div>
+              </div>
+              <div id="code-prev-fourth">
+                <pre style="text-align: left" id="code-box-fourth-code"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;Primary button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; disabled&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot; disabled&gt;Primary button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; disabled&gt;Button&lt;/button&gt;
+              </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

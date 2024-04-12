@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+#title-buttons {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+body {
+  padding: 0;
+  background-color: #2f3542;
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+}
+
+#up {
+  display: none;
+}
+
+.buttons {
+  margin-top: 4%;
+  height: 450px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  z-index: 1;
+}
+
+.inner-line-buttons {
+  border: 2px solid gray;
+  height: 95%;
+  width: 98%;
+  margin: 1% 1%;
+  z-index: 2;
+}
+
+#line {
+  border: 1px solid black;
+}
+
+#button-prev {
+  display: block;
+  margin: 2% auto;
+}
+
+#prev-box-first {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border: 1px solid #495057;
+  border-radius: 25px;
+}
+
+#prev-box-second {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border: 1px solid #495057;
+  border-radius: 25px;
+}
+
+#prev-box-third {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border: 1px solid #495057;
+  border-radius: 25px;
+}
+
+#prev-box-fourth {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border: 1px solid #495057;
+  border-radius: 25px;
+}
+
+#code-box-first {
+  font-family: "sans-serif", sans-serif;
+}
+
+#code-box-second {
+  font-family: "sans-serif", sans-serif;
+}
+
+#code-box-third {
+  font-family: "sans-serif", sans-serif;
+}
+
+#code-box-fourth {
+  font-family: "sans-serif", sans-serif;
+}
+
+pre {
+  border-radius: 25px;
+}
+
+#variants-buttons {
+  text-align: center;
+}
+
+#outline-buttons {
+  text-align: center;
+}
+
+#disabled-buttons {
+  text-align: center;
+}
